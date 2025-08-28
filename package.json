@@ -1,0 +1,33 @@
+{
+  "name": "inclucity-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page demo desenvolvida como desafio técnico para a Hubs (2025). Projeto IncluCity.",
+  "author": "Eduarda Lourenço",
+  "keywords": [
+    "gatsby",
+    "react",
+    "tailwind",
+    "frontend",
+    "inclucity"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^5.15.0",
+    "gatsby-plugin-postcss": "^6.15.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.3"
+  }
+}
