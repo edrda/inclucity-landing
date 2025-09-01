@@ -18,13 +18,44 @@ const Header: React.FC = () => {
 
         {/* Navigation and CTA */}
         <nav className="hidden md:flex space-x-6 items-center">
-          <Link to="#advantages" className="text-light hover:underline transition font-medium">
+          <style> 
+            {` 
+              .menu-item { 
+                transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                transition-duration: 150ms; 
+              } 
+              .menu-item:hover {
+                color: #fff;
+              }
+              .menu-item:hover::after {
+                  transform-origin: 0% 50%;
+                  content: "";
+                  transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1) scaleY(1);
+              }
+              .menu-item:after {
+                position: absolute;
+                top: calc(100% + 0.20rem);
+                left: 0px;
+                height: 1px;
+                width: 100%;
+                transform-origin: 100% 50%;
+                transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(0) scaleY(1);
+                background-color: rgb(255 255 255 / 1);
+                transition-property: transform;
+                transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                content: "";
+                transition-duration: 300ms;
+              }
+            `} 
+          </style>
+          <Link to="#advantages" className="menu-item relative text-light font-semibold transition font-medium">
             Sobre
           </Link>
-          <Link to="#plans" className="text-light hover:underline transition font-medium">
+          <Link to="#plans" className="menu-item relative text-light font-semibold transition font-medium">
             Planos
           </Link>
-          <Link to="#cities" className="text-light hover:underline transition font-medium">
+          <Link to="#cities" className="menu-item relative text-light font-semibold transition font-medium">
             Cidades Inclusivas
           </Link>
           <Link
