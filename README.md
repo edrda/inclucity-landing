@@ -66,7 +66,7 @@ npm run develop
 # O servidor estará disponível em:
 http://localhost:8000
 
-
+```
 ---
 
 ##🌟 Funcionalidades da landing page
@@ -100,11 +100,10 @@ http://localhost:8000
 ## 🖼️ Protótipo
 
 O design da landing page foi criado previamente em Figma (versões desktop e mobile).
+https://www.figma.com/design/w6pqwxStCb8eoTYRUfKIuU/IncluCity?node-id=1-2&t=rlvrA9Ko6vTgjelX-1
 
-
-## 📜 Licença
-
-Este projeto é de uso demonstrativo.
+## 🔗 Deploy
+Foi feito deploy do projeto na vercel, disponível em https://inclucity.vercel.app
 
 ---
 
