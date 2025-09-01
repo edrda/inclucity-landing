@@ -39,7 +39,6 @@ inclucity-landing/
 ### Pré-requisitos
 - Node.js (v18 ou superior recomendado)  
 - npm ou yarn  
-- Conta no [Formspree](https://formspree.io/) (para o formulário funcionar, caso queira testar)  
 
 ### Passos
 ```bash
@@ -64,9 +63,11 @@ http://localhost:8000
 
 ### Hero Section: apresentação do app IncluCity
 
-### Planos e Vantagens: planos fictícios (Free, Premium e Empresas)
+### Vantagens: Sobre e destaques do app
 
-### Cidades Inclusivas: integração com GraphQL para listar cidades e exibir ranking fictício
+### Planos: planos fictícios (Free, Premium e Empresas)
+
+### Cidades Inclusivas: integração com GraphQL para listar cidades e exibir ranking fictício (em desenvolvimento)
 
 ### Formulário de Contato: com campos validados e integração Formspree
 
