@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { useQuery, gql } from "@apollo/client"
 import { Icon } from "@iconify/react"
 
@@ -30,6 +30,15 @@ const GET_CITIES = gql`
 const CITIES_PER_PAGE = 6
 
 const Cities: React.FC = () => {
+  const [isClient, setIsClient] = useState(false)
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  if (!isClient) {
+    return <p className="text-center">Carregando...</p>
+  }
+  
   const [search, setSearch] = useState("")
   const [currentPage, setCurrentPage] = useState(1)
   
