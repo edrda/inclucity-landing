@@ -9,7 +9,7 @@ const client = new ApolloClient({
     },
   }),
   cache: new InMemoryCache(),
-  ssrMode: true, // <- importante para build
+  ssrMode: true, 
 })
 
 exports.wrapRootElement = ({ element }) => (
