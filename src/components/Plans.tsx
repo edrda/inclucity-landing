@@ -8,11 +8,11 @@ const Plans: React.FC = () => {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold">Planos</h2>
-          <p className="mt-4 max-w-3xl mx-auto text-light/90">
-            Oferecemos planos grátis e premium para usuários que querem
+          <p className="max-w-3xl mx-auto text-light/90 text-lg leading-relaxed">
+            Oferecemos planos gratuitos e premium para usuários que querem
             aproveitar nosso app, além de um plano exclusivo para empresas que
-            querem se destacar e tornar da cidade um lugar mais{" "}
-            <em>inclusivo</em>.
+            querem se destacar e tornar a cidade um lugar mais{" "}
+            <em className="not-italic font-semibold">inclusivo</em>.
           </p>
         </div>
 
