@@ -4,6 +4,7 @@ import Header from "../components/Header"
 import Hero from "../components/Hero"
 import Advantages from "../components/Advantages"
 import Plans from "../components/Plans"
+import Cities from "../components/Cities"
 import ContactForm from "../components/ContactForm"
 import Footer from "../components/Footer"
 
@@ -14,6 +15,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Hero />
       <Advantages />
       <Plans />
+      <Cities />
       <ContactForm />
       <Footer />
     </main>

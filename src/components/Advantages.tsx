@@ -31,7 +31,7 @@ const advantages = [
 const Advantages: React.FC = () => {
   return (
     <section id="advantages" className="py-20 bg-light text-dark">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="flex flex-col items-center max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-extrabold text-primary">
@@ -39,13 +39,19 @@ const Advantages: React.FC = () => {
           </h2>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="flex flex-col max-w-5x1 md:flex-row md:flex-wrap gap-10 justify-center items-stretch">
           {advantages.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition"
+              className="flex-1 min-w-[250px] adv-card max-w-sm bg-secondary bg-opacity-10 rounded-xl shadow-md p-6 flex flex-col items-center place-content-around text-center hover:shadow-xl transition"
             >
+               <style> 
+                {` 
+                    .adv-card { 
+                      min-height: 250px; 
+                    } 
+                `} 
+            </style>
               <Icon
                 icon={item.icon}
                 className="text-primary text-5xl mb-4"
