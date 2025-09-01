@@ -1,49 +1,100 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# 🌍 IncluCity
 
-## 🚀 Quick start
+IncluCity é uma landing page fictícia criada como desafio técnico para o processo seletivo da **Hubs**.  
+O objetivo é apresentar a ideia de um aplicativo voltado para mapear a **acessibilidade de cidades e estabelecimentos**, permitindo que usuários colaborem e compartilhem informações sobre rampas, banheiros adaptados, sinalização e muito mais.
 
-1.  **Create a Gatsby site.**
+A proposta é mostrar criatividade, boas práticas de desenvolvimento front-end, performance, SEO e integração com APIs GraphQL.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+---
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 🚀 Tecnologias utilizadas
+- [Gatsby](https://www.gatsbyjs.com/) (v5) – framework baseado em React com foco em performance e SEO  
+- [React](https://react.dev/) (v18) – biblioteca para construção de interfaces  
+- [TailwindCSS](https://tailwindcss.com/) – estilização responsiva e produtiva  
+- [PostCSS](https://postcss.org/) + [Autoprefixer](https://github.com/postcss/autoprefixer) – processamento de CSS  
+- [Formspree](https://formspree.io/) – integração para envio do formulário de contato  
+- [GraphQL API pública](https://github.com/trevorblades/countries) – consumida para exibir a seção extra **“Cidades Inclusivas”** (ranking demonstrativo)  
 
-2.  **Start developing.**
+---
 
-    Navigate into your new site’s directory and start it up.
+## 📂 Estrutura do projeto
+```
+inclucity-landing/
+├─ src/
+│ ├─ components/ # Componentes reutilizáveis (Hero, Plans, Footer, etc.)
+│ ├─ pages/ # Página principal (index.tsx)
+│ ├─ styles/ # Estilos globais (Tailwind)
+│ └─ ...
+├─ gatsby-config.js # Configurações do Gatsby
+├─ postcss.config.js # Configuração do PostCSS
+├─ tailwind.config.js # Configuração do Tailwind
+└─ package.json
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
 
-3.  **Open the code and start customizing!**
+---
 
-    Your site is now running at http://localhost:8000!
+## 🛠️ Como rodar o projeto localmente
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Pré-requisitos
+- Node.js (v18 ou superior recomendado)  
+- npm ou yarn  
+- Conta no [Formspree](https://formspree.io/) (para o formulário funcionar, caso queira testar)  
 
-4.  **Learn more**
+### Passos
+```bash
+# Clonar o repositório
+git clone https://github.com/edrda/inclucity-landing.git
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+# Entrar na pasta
+cd inclucity-landing
 
-## 🚀 Quick start (Netlify)
+# Instalar dependências
+npm install
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+# Rodar em ambiente de desenvolvimento
+npm run develop
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+# O servidor estará disponível em:
+http://localhost:8000
+
+---
+
+##🌟 Funcionalidades da landing page
+
+### Hero Section: apresentação do app IncluCity
+
+### Planos e Vantagens: planos fictícios (Free, Premium e Empresas)
+
+### Cidades Inclusivas: integração com GraphQL para listar cidades e exibir ranking fictício
+
+### Formulário de Contato: com campos validados e integração Formspree
+
+### Footer: slogan e links sociais
+
+---
+
+## 📈 Boas práticas aplicadas
+
+### SEO: uso de tags semânticas, títulos, meta descriptions
+
+### Performance: imagens otimizadas, build do Gatsby
+
+### Acessibilidade: contraste de cores, labels nos formulários, navegação por teclado
+
+### Responsividade: layout adaptado para desktop e mobile
+
+---
+
+## 🖼️ Protótipo
+
+O design da landing page foi criado previamente em Figma (versões desktop e mobile).
+
+
+## 📜 Licença
+
+Este projeto é de uso demonstrativo.
+
+---
+
+## 💡 IncluCity – Por cidades mais inclusivas.
